@@ -50,10 +50,10 @@ mod front_of_house {
 
 pub fn eat_at_restaurant() {
     // Call add_to_waitlist with **absolute path**:
-    __.add_to_waitlist();
+    __::add_to_waitlist();
 
     // Call with **relative path** 
-     __.add_to_waitlist();
+     __::add_to_waitlist();
 }
 ```
 
@@ -67,7 +67,7 @@ mod back_of_house {
         // FILL in the blank in three ways
         //1. using keyword `super`
         //2. using absolute path
-        __.serve_order();
+        __::serve_order();
     }
 
     fn cook_order() {}
