@@ -223,7 +223,7 @@ Some of these methods call the method `next`to use up the iterator, so they are 
 
 8. 🌟🌟
 
-```rust,edtiable
+```rust,editable
 
 /* Fill in the blank and fix the errors */
 fn main() {
