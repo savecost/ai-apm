@@ -118,7 +118,7 @@ fn main() {
 ```rust
 fn fn_once<F>(func: F)
 where
-    F: FnOnce(usize) -> bool + Copy,// 改动在这里
+    F: Copy + FnOnce(usize) -> bool,// 改动在这里
 {
     println!("{}", func(3));
     println!("{}", func(4));
