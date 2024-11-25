@@ -73,7 +73,7 @@
   - [Send and Sync](threads/send-sync.md)
 - [Global variables TODO](global-variables.md)
 - [Errors TODO](errors.md)
-- [Unsafe doing](unsafe/intro.md)
+- [Unsafe TODO](unsafe/intro.md)
   - [Inline assembly](unsafe/inline-asm.md)
 - [Macro TODO](macro.md)
 - [Tests TODO](tests/intro.md)
