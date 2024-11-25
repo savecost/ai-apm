@@ -53,6 +53,7 @@ fn init() -> Option<&'static mut Config> {
 fn main() {
     unsafe {
         config = init();
+        if config.is_none() {panic!("`None` isn't solution to this exercise")};
 
         println!("{:?}",config)
     }
