@@ -16,7 +16,7 @@ mod front_of_house {
 
         fn take_payment() {}
 
-        fn complain() {} 
+        fn complain() {}
     }
 }
 ```
@@ -41,7 +41,7 @@ pub mod front_of_house {
 
         // Maybe you don't want the guest hearing the your complaining about them
         // So just make it private
-        fn complain() {} 
+        fn complain() {}
     }
 }
 
@@ -83,8 +83,9 @@ mod back_of_house {
 ```rust
 // in src/lib.rs
 
-mod front_of_house;
-mod back_of_house;
+pub mod front_of_house;
+pub mod back_of_house;
+
 pub fn eat_at_restaurant() -> String {
     front_of_house::hosting::add_to_waitlist();
 
@@ -134,16 +135,14 @@ pub fn take_payment() {}
 
 // Maybe you don't want the guest hearing the your complaining about them
 // So just make it private
-fn complain() {} 
+fn complain() {}
 ```
 
 5.
 
 ```rust
-mod front_of_house;
-
 fn main() {
-    assert_eq!(front_of_house::hosting::seat_at_table(), "sit down please");
-    assert_eq!(hello_package::eat_at_restaurant(),"yummy yummy!");
+    assert_eq!(hello_package::front_of_house::hosting::seat_at_table(), "sit down please");
+    assert_eq!(hello_package::eat_at_restaurant(), "yummy yummy!");
 }
 ```
